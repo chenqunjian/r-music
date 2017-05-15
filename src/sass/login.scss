@@ -1,0 +1,123 @@
+.login{
+    flex:1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+
+	.logo{
+    	display: flex;
+    	justify-content: center;
+		height: 35%;
+
+		img{
+			width: 6rem;
+			height: 6rem;
+			margin-top: 22%;
+		}
+	}
+
+	.manners{
+		display: flex;
+		height: 45%;
+		flex-flow: column;
+		align-items: center;
+
+		div{
+			display: flex;
+			justify-content: center;
+			height: 2.4rem;
+			align-items: center;
+		}
+
+		.mobile, .register{
+			width: 22rem;
+			border: 1px solid rgb(232,0,0);
+			border-radius: 2rem;
+			margin-bottom: 1rem;
+			color: rgb(232,0,0);
+			font-size: 1.2rem;
+		}
+		.mobile:hover, .register:hover{
+			color: #fff;
+			background: rgb(232,0,0);
+		}
+
+		.trial{
+			color: #666;
+
+			.arrow{
+				margin-left: .3rem;
+				background: -webkit-linear-gradient(left, #666 , #eee);
+  				-webkit-background-clip: text;
+  				-webkit-text-fill-color: transparent;
+			}
+		}
+	}
+
+	.others{
+		display: flex;
+		height: 20%;
+		flex-flow: column;
+		align-items: center;
+		color: #777;
+		font-size: 0.8rem;
+
+		.title{
+			height: 15%;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.left{
+				width: 35%;
+				height: 1px;
+				background: -webkit-linear-gradient(left, #fff, #ddd);
+			}
+			.right{
+				width: 35%;
+				height: 1px;
+				background: -webkit-linear-gradient(right, #fff, #ddd);
+			}
+			.text{
+				margin: 0 .6rem;
+			}
+		}
+
+		.content{
+		    height: 85%;
+		    width: 100%;
+		    display: flex;
+		    flex-flow: row nowrap;
+		    align-items: center;
+		    justify-content: space-around;
+
+		    div{
+		    	display: flex;
+		    	flex-flow: column;
+		    	align-items: center;
+
+		    	i{
+		    		width: 38px;
+		    		height: 38px;
+		    		background: url(../images/logo.png);
+		    		margin-bottom: .5rem;
+		    	}
+
+	    		.wx{
+	    			background-position: -150px -670px;
+	    		}
+	    		.qq{
+	    			background-position: -190px -670px;
+	    		}
+	    		.sn{
+	    			background-position: -231px -670px;
+	    		}
+	    		.wy{
+	    			background-position: -271px -670px;
+	    		}
+		    }
+		}
+	}
+}

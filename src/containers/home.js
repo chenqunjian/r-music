@@ -121,7 +121,7 @@ class App extends Component {
                   <div style={{position:'relative',width: '100%',height:'100%'}}>
                     <div style={ Object.assign({ display:'flex',flex:1,justifyContent: 'center',alignItems:'center'},  index === i ? { color: '#ce3d3e' } :{} )} onClick={this.handleChangeTabs(i)}>{item}</div>
                     {
-                      this.state[`flag${i}`] ? <div className={this.state[`flag${i}`] ? 'ripple' : ''} style={{position: 'absolute',backgroundColor:'#999',left:0,width:'100%',height:'100%'}}></div> :''
+                      this.state[`flag${i}`] ? <div className={this.state[`flag${i}`] ? 'ripple' : ''} style={{position: 'absolute',backgroundColor:'#ec9999',left:0,width:'100%',height:'100%'}}></div> :''
                     }
                   </div>  
   
@@ -129,7 +129,7 @@ class App extends Component {
               }
               
             </div>
-            <div className="highlight" style={{transform:`translateX(${index}00%)`}}></div>
+            <div className="highlight" style={{transform:`translateX(${index}00%)`,WebkitTransform:`translateX(${index}00%)`}}></div>
         </div>
         
        

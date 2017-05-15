@@ -97,7 +97,8 @@ html,body {
     height: .6rem;
     display: block;
     margin: 6px;
-    transform: rotate(135deg); 
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg); 
 }
 .arrow-left {
 	border-top:2px solid #fff;
@@ -106,7 +107,7 @@ html,body {
     height: 15px;
     display: block;
     margin: 15px 10px;
-    transform: rotate(-45deg); 
+    -webkit-transform: rotate(-45deg); 
 }
 
 
@@ -123,6 +124,7 @@ html,body {
 @keyframes ripple {
   to {
     transform: scale(1.2);
+    -webkit-transform: scale(1.2);
     opacity: 0;
   }
 }
@@ -131,8 +133,10 @@ html,body {
   background: rgba(0,0,0,.15);
   border-radius: 100%;
   transform: scale(0);
+  -webkit-transform: scale(0);
   pointer-events: none;
   animation: ripple .50s ease-out;
+  -webkit-animation: ripple .50s ease-out;
 }
 
 

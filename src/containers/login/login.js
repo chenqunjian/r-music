@@ -1,6 +1,8 @@
 import React, { Component, PropTypes } from 'react'
 import { connect } from 'react-redux'
 
+import { Link} from 'react-router-dom'
+
 class Login extends Component {
 
   render() {
@@ -8,13 +10,13 @@ class Login extends Component {
       <div className='login'>
 
         <div className="logo">
-          <img src="../images/144.png" />
+          <img src="../../images/144.png" />
         </div>
 
         <div className="manners">
-          <div className="mobile">手机号登录</div>
-          <div className="register">注册</div>
-          <div className="trial">游客试用<span className="arrow">>>></span></div>
+          <Link to=""><div className="mobile">手机号登录</div></Link>
+          <Link to=""><div className="register">注册</div></Link>
+          <Link to=""><div className="trial">游客试用<span className="arrow">>>></span></div></Link>
         </div>
 
         <div className="others">
