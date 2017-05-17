@@ -33,6 +33,8 @@ import play from './containers/play'
 import rankinfo from './containers/rankinfo'
 import mvplay from './containers/mvPlay'
 import login from './containers/login/login'
+import mobile from './containers/login/mobile'
+import email from './containers/login/email'
 
 // 渲染
 render(
@@ -51,6 +53,8 @@ render(
       <Route  path={`/rankinfo/:rankid`} component={rankinfo} />
       <Route  path={`/mvplay/:mvid`} component={mvplay} />
       <Route  path={`/login`} component={login} />
+      <Route  path={`/mobile`} component={mobile} />
+      <Route  path={`/email`} component={email} />
       <Route component={Home}/>
      </Switch>
   </Router>

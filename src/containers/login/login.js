@@ -14,7 +14,7 @@ class Login extends Component {
         </div>
 
         <div className="manners">
-          <Link to=""><div className="mobile">手机号登录</div></Link>
+          <Link to={`/mobile`}><div className="mobile">手机号登录</div></Link>
           <Link to=""><div className="register">注册</div></Link>
           <Link to=""><div className="trial">游客试用<span className="arrow">>>></span></div></Link>
         </div>
@@ -29,7 +29,7 @@ class Login extends Component {
             <div><i className="wx"></i><a>微信</a></div>
             <div><i className="qq"></i><a>QQ</a></div>
             <div><i className="sn"></i><a>新浪微博</a></div>
-            <div><i className="wy"></i><a>网易邮箱</a></div>
+            <Link to={`/email`}><div><i className="wy"></i><span>网易邮箱</span></div></Link>
           </div>
         </div>
       </div>
