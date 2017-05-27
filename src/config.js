@@ -21,7 +21,8 @@ if (process.env.NODE_ENV === 'production') {
     recommendMV: '/NeteaseCloudMusicApi/personalized/mv',
     newestMV: '/NeteaseCloudMusicApi/mv/first',
     mvInfo: '/NeteaseCloudMusicApi/mv',
-    mvComment: '/NeteaseCloudMusicApi/comment/mv'
+    mvComment: '/NeteaseCloudMusicApi/comment/mv',
+    login: 'NeteaseCloudMusicApi/login/'
   }
 }else{
   Config = {
@@ -43,7 +44,9 @@ if (process.env.NODE_ENV === 'production') {
     newestMV: '/NeteaseCloudMusicApi/mv/first',
     //mvInfo: './json/mv-info.json',
     mvInfo: '/NeteaseCloudMusicApi/mv',
-    mvComment: '/NeteaseCloudMusicApi/comment/mv'
+    mvComment: '/NeteaseCloudMusicApi/comment/mv',
+    //login: 'NeteaseCloudMusicApi/login/'
+    login: './json/login.json'
 
     //recommendMV: './json/mv-recommend.json',
     //newestMV: './json/mv-newest.json',

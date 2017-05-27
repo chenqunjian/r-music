@@ -17,6 +17,6 @@ export const messageHidden = () => {
 export function alert(msg){
 	return dispatch => { 
 		dispatch(messageShow(msg))
-		setTimeout(()=>dispatch(messageHidden()),1000)
+		setTimeout(()=>dispatch(messageHidden()),2000)
 	}
 }

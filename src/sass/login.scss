@@ -8,6 +8,7 @@
 	.logo{
     	display: flex;
     	justify-content: center;
+    	align-items: center;
 		height: 35%;
 
 		img{
@@ -131,7 +132,7 @@
     		height: 3rem;
     		background: url(../images/logo.png);
     		margin-bottom: .5rem;
-    		z-index: 999;
+    		z-index: 1;
 		}
 		input{
 			width: 85%;

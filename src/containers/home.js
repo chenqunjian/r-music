@@ -16,7 +16,7 @@ import rank from './rank'
 
 const navArray = ['个性推荐','歌单','排行榜','MV']
 
-class App extends Component {
+class App extends React.Component {
 
 
   constructor(props) {

@@ -1,0 +1,88 @@
+$containerColor: #eee;
+$boxColor: #fff;
+$labelColor: #777;
+$contentColor: #444;
+
+$contentFontSize: 1.5rem;
+$labelFontSize: 1.1rem;
+
+$border: 1px solid #eee;
+
+.container{
+	background: $containerColor;
+	font-size: 1.5rem;
+}
+.box1{
+	display: flex;
+	flex-flow: column;
+	background: $boxColor;
+
+	.line1{
+		display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	padding: 0 1rem;
+    	height: 7rem;
+    	border-bottom: $border;
+
+		img{
+			width: 4rem;
+			border-radius: 3rem;
+		}
+		.nameAndLevel{
+			width: 70%;
+
+			.level{
+			    width: 2.5rem;
+			    border: 2px solid #ddd;
+			    color: #999;
+			    font-size: 1rem;
+			    display: flex;
+			    justify-content: center;
+			    border-radius: 3rem;
+			}
+		}
+		.sign{
+			border: 2px solid #ce3d3e;
+		    color: #ce3d3e;
+		    border-radius: 3rem;
+		    font-size: 1rem;
+		    width: 3rem;
+		    display: flex;
+		    justify-content: center;
+		}
+
+	}
+
+	.line2{
+		display: flex;
+    	justify-content: space-between;
+    	width: 100%;
+    	height: 4.5rem;
+    	align-items: center;
+
+    	.item{
+			display: flex;
+		    flex-flow: column;
+		    width: 25%;
+		    align-items: center;
+		    justify-content: center;
+    		border-right: $border;
+
+		    label{
+		    	color: $labelColor;
+		    	font-size: $labelFontSize;
+		    }
+    	}
+
+	}
+}
+
+.box2{
+	display: flex;
+	background: $boxColor;
+    justify-content: space-between;
+    margin-top: .6rem;
+    height: 3rem;
+    align-items: center;
+}

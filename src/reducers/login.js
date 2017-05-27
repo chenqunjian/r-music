@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { LOGIN,LOGIN_ERROR } from '../actions/login'
+import { LOGIN,LOGIN_ERROR,ACCOUNT } from '../actions/login'
 
 
 // function loginError(state = '', action) {
@@ -20,8 +20,33 @@ function login(state = '', action) {
   }
 }
 
+function loginError(state = '', action) {
+  switch (action.type) {
+    case LOGIN_ERROR:
+      return action.obj
+    default:
+      return state
+  }
+}
+
+let accountVo = {
+  account: {},
+  profile: {
+    avatarUrl: '',
+  }
+}
+
+function account(state = accountVo, action){
+	switch(action.type) {
+		case ACCOUNT:
+			return action.obj
+		default:
+			return state;
+	}
+}
+
 const todoApp = combineReducers({
-  login
+  login,account
 })
 
 export default todoApp
